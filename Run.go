@@ -1,5 +1,5 @@
 package CalculatorZFU
-//anıl demirkol
+//anıl demirkoll
 import (
 	"fmt"
 	"bufio"
