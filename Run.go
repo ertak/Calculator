@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"bufio"
 	"os"
+ 	"./Calculator.go"
 )
 
 func main() {
@@ -31,7 +32,6 @@ func main() {
 		optionTemp := bufio.NewReader(os.Stdin)
 		d, _, _ := optionTemp.ReadLine()
 		option = string(d)
-
 
 		switch option {
 		case "+": result = sum(number, number2)

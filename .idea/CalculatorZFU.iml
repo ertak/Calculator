@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="GO_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <output url="file:///production/CalculatorZFU" />
+    <output-test url="file:///test/CalculatorZFU" />
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <annotation-paths>
+      <root url="file://$MODULE_DIR$" />
+    </annotation-paths>
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" type="java-resource" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
