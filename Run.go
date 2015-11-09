@@ -1,10 +1,10 @@
 package CalculatorZFU
-
+//anıl demirkol
 import (
 	"fmt"
 	"bufio"
 	"os"
- 	
+
 )
 
 func main() {
