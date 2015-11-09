@@ -1,0 +1,23 @@
+1- main function main package disinda baska bir package icerisinde calismaz.
+
+
+2- Bir package de bulunun butun dosyalar package ile ayni ismi tasiyan klasor icinde yer almak 
+zorunda. ve tanimladigimiz her package %GOPATH%\src icerisinde olmak zorunda, arada baska bir klasor yapisi olmamali
+(eger alt package degilse --bkz 4. madde).
+yani 'dortIslem' adinda bir package icinde 'toplama', 'cikarma' ve 'carpma' gibi 
+farkli dosyalar varsa bu dosyalarin bulundugu klasorun adi 'dortIslem' olmak zorunda. ve bu dort islem klasoru de 
+GOPATH icindeki src klasorunun icinde yer almali.
+
+
+3- Bir package icinde tanimladiginiz fonksiyonlari baska bir package icinde cagirabilmek istiyorsaniz 
+bu fonksiyonlarin adinin ilk harfi buyuk olmak zorunda, adi kucuk harfle baslayan fonksiyonlar baska yerden cagiralamaz. 
+Bunu soylede dusunebiliriz public metotlarin isiminin ilk harfini buyuk yap, private metotlarin isminin ilk harfini kucuk :D
+
+
+4- Bir package icinde yeni bir alt package tanimlayabiliriz. Ornegin Go nun standart kutuphanesinde bulunan 'net' ve 'http' package leri gibi.
+'http', 'net' in bir alt package i dir ve http klasoru net klasorunun icinde yer alir (bkz %GOROOT%\src\net).
+Eger http i icinde tanimlanan bir fonksiyonu kullanmak istiyorsak --import "net/http"-- yazmamiz gerekir.
+
+
+***bunlar benim karsilastigim kodun calismasini engelleyen gozden kacan ufak noktalar.ben sublime da yazdigim icin belki intellij kullanan arkadaslar
+ayni sorunlarla karsilasmaz. Eksik yada yanlis olan yerler olabilir anladigim kadariyla yazmaya calistim.
