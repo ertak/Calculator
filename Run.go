@@ -1,10 +1,10 @@
 package CalculatorZFU
-
+//anıl demirkolll push
 import (
 	"fmt"
 	"bufio"
 	"os"
- 	"./Calculator.go"
+
 )
 
 func main() {
